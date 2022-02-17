@@ -3,7 +3,23 @@ module.exports = {
       title: `rodrigo-daud-site`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-styled-components", {
+  plugins: [
+    "gatsby-plugin-sharp",{
+      resolve: `gatsby-transformer-remark`,
+      options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            // It's important to specify the maxWidth (in pixels) of
+            // the content container as this plugin uses this as the
+            // base for generating different widths of each image.
+            maxWidth: 1280,
+          },
+        },
+      ],
+    },
+    },"gatsby-plugin-styled-components", "gatsby-plugin-root-import", {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "G-SGN24MEFZ7"
@@ -13,7 +29,7 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -27,5 +43,11 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts',
+      },
   }]
 };

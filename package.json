@@ -23,14 +23,16 @@
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-sitemap": "^5.7.0",
     "gatsby-plugin-styled-components": "^5.7.0",
+    "gatsby-remark-images": "^6.7.0",
     "gatsby-source-filesystem": "^4.7.0",
+    "gatsby-transformer-remark": "^5.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.3"
   },
-  "engines" : { 
-    "node" : ">=16.13.1"
+  "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.8"
   }
 }
