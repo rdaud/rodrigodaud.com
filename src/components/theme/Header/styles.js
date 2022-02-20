@@ -12,26 +12,25 @@ export const Wrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 9999;
 `
 
 export const Logo = styled.div`
     display: flex;
     gap: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
     transition: all .5s;
 
 `
 
 export const Name = styled.h5`
     font-family: 'Questrial', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 0 !important;
 `
 
 export const Slogan = styled.h5`
     font-family: 'Questrial', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     opacity: .6;
     margin-bottom: 0 !important;
 
@@ -45,8 +44,6 @@ export const Divider = styled.div`
 
 export const Contact = styled.h5`
     font-family: 'Questrial', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 0 !important;
-    opacity: 0;
-    transform: translateY(20px);
 `

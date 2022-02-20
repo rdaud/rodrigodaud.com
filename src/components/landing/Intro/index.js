@@ -6,10 +6,10 @@ import { Wrapper, Title, Subtitle } from './styles.js'
 export const Intro = ({className}) => {
     return (
         <Wrapper className={className} as={Container} >
-            <Title >
+            <Title>
                 Rodrigo Daud. <br />Full Stack Designer.
             </Title>
-            <Subtitle >
+            <Subtitle>
                 Design & Technology
             </Subtitle>
         </Wrapper>

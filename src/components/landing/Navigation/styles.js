@@ -25,12 +25,7 @@ export const Item = styled.h1`
     border-right: 1px solid #c2c2c2;
     border-top: 1px solid #c2c2c2;
     margin-bottom: 0;
-    background: ${ props => 
-        props.index === 1 && 'white'
-        ||
-        props.index === 2 && 'white'
-        ||
-        props.index === 3 && 'white'}
-    ;
+    background: white;
+    cursor: pointer;
 `
 

@@ -10,7 +10,7 @@ export const Header = () => {
                 </Name>
                 <Divider />
                 <Slogan>
-                    Design & Technology
+                    Design & Tech
                 </Slogan>
             </Logo>
             <Contact className="contact">

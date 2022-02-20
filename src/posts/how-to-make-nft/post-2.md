@@ -1,17 +1,23 @@
 ---
-id: 27
-slug: '/my-second-post'
+id: 2
+slug: '/work/my-second-post'
 thumbnail: './nft.jpg'
 date: 2021-11-23T15:10:01.889Z
 edited: 2021-11-23T15:10:01.889Z
-next: '/2020-in-year-review'
 title: 'How to make an NFT'
 tags:
   - dev
   - tech
   - react
-popular: false
-draft: false
+client: HDI Insurance
+industry: Health
+location: Brazil
+timeline: 12 months
+sections:
+ - briefing
+ - scenary
+ - discovery
+
 ---
 
 > You can collect this article as an NFT [Here](https://mirror.xyz/smakosh.eth/eLXmQJ0Rb1Ahd1Pi3TpnSOzpVytCJB1kxcO2WXnF4uI)

@@ -4,10 +4,11 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
-    "gatsby-plugin-sharp",{
+    "gatsby-plugin-sharp",
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
-      plugins: [
+      plugins: [ `gatsby-remark-autolink-headers`,
         {
           resolve: `gatsby-remark-images`,
           options: {

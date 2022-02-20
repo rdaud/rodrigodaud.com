@@ -9,15 +9,15 @@ import './layout.css'
 import globalTheme from './globalTheme.js'
 
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, bg }) => {
 
   return (
     <ThemeProvider theme={globalTheme}>
       <Header />
-      <Wrapper>
+      <Wrapper bg={bg}>
         {children}
       </Wrapper>
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
 
   )

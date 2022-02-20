@@ -1,6 +1,6 @@
 import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
-import { Wrapper } from './styles.js'
+import { graphql, useStaticQuery, navigate } from 'gatsby'
+import { Wrapper, Post, Display, Tag } from './styles.js'
 import { Container } from '../../common/index.js'
 
 export const Posts = () => {
@@ -15,6 +15,7 @@ export const Posts = () => {
                     id
                     slug
                     title
+                    tags
                 }
                 }
             }
@@ -22,7 +23,9 @@ export const Posts = () => {
         }
     `)
 
-  console.log(edges)
+  
+
+
 
     return (
         <Wrapper as={Container}>
@@ -30,13 +33,24 @@ export const Posts = () => {
 
                 const title = item.node.frontmatter.title
                 const slug = item.node.frontmatter.slug
+                const tags = item.node.frontmatter.tags
+
+                function handleClickEvent() {
+                    navigate(slug)
+                }
+
+                console.log(tags)
+                
 
                 return (
-                    <>
-                    <Link to={slug}>
-                    <h3> {title} </h3> 
-                    </Link>
-                    </>
+                    <Post onClick={handleClickEvent}>
+                        <Display> {title} </Display>
+                        <div>
+                        { tags.map((tag,index) => (
+                            <Tag key={index}> { tag } </Tag>
+                        ))}
+                        </div>
+                    </Post>
                 )
             }) }
         </Wrapper>

@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Layout } from 'components/common'
-import { Intro, Posts, Navigation } from "../components/landing"
+import { Intro, Navigation } from "../components/landing"
+import gsap from 'gsap'
 
 
-window.onload = () => {
-  setTimeout(() => console.log('e'), 3000)
-}
+
 
 
 
@@ -17,18 +16,18 @@ React.useEffect(() => {
   const contact = document.querySelector('.contact')
   const navigation = document.querySelector('.navigation')
 
-
-
-  setTimeout(() => {
-    intro.classList.add('fade-out')
+  // setTimeout(() => {
+  //   intro.classList.add('fade-out')
   
-  }, 2000)
+  // }, 2000)
+
+  gsap.to(".intro", { y: 30, duration: 1});
+
   setTimeout(() => {
     intro.remove()
     logo.classList.add('reveal')
     contact.classList.add('reveal')
     navigation.classList.add('reveal')
-    // intro.remove()
   }, 3000)
 
   
@@ -37,7 +36,6 @@ React.useEffect(() => {
   return (
    <Layout>
      <Intro className="intro" />
-     {/* <Posts /> */}
      <Navigation className="navigation"/>
    </Layout>
   )

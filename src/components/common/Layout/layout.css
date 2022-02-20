@@ -5,6 +5,11 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
   
   body {
     margin: 0;
@@ -343,9 +348,10 @@ html {
     margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
+    list-style: none;
+
   }
   ol {
-    margin-left: 1.45rem;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -353,7 +359,7 @@ html {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
-    list-style-position: outside;
+    list-style-position:inside;
     list-style-image: none;
   }
   dl {
@@ -522,12 +528,10 @@ html {
     padding-left: 0;
   }
   li > ol {
-    margin-left: 1.45rem;
     margin-bottom: calc(1.45rem / 2);
     margin-top: calc(1.45rem / 2);
   }
   li > ul {
-    margin-left: 1.45rem;
     margin-bottom: calc(1.45rem / 2);
     margin-top: calc(1.45rem / 2);
   }
@@ -647,7 +651,7 @@ html {
   
   a {
     text-decoration: none;
-    color: rgb(0, 119, 255);
+    color: black;
   }
   
   button,
@@ -655,6 +659,30 @@ html {
   select,
   textarea:focus {
     outline: none;
+  }
+
+ 
+
+
+
+  button {
+    padding: 0;
+    width: auto;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+     /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
   }
 
   .reveal {
@@ -671,6 +699,37 @@ html {
 
   .fade-out {
     opacity: 0 !important;
-    transform: translateY(-20px) !important;
     transition: all 1s;
   }
+
+  .rotate-works {
+    transform: rotateY(180deg);
+    background: orange !important;
+    color: orange !important;
+    border-color: orange !important;
+    transition: all 1s;
+  }
+
+  .rotate-about {
+    transform: rotateY(180deg);
+    background: green !important;
+    color: green !important;
+    border-color: green !important;
+    transition: all 1s;
+  }
+
+  .rotate-contact {
+    transform: rotateY(180deg);
+    background: blue !important;
+    color: blue !important;
+    border-color: blue !important;
+    transition: all 1s;
+  }
+
+
+ 
+
+
+
+
+ 

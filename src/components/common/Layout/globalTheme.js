@@ -5,5 +5,6 @@ export default {
       white: '#fff',
       blue: '#007ce0',
       navy: '#004175',
+      lightgray: '#a1a1a1'
     },
   }
