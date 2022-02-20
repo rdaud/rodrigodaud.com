@@ -1,9 +1,9 @@
 import React from 'react'
 import { Wrapper, InnerWrapper, Item } from './styles.js'
 import { Spacer, Container, Divider } from '../../common/index.js'
-import gsap from 'gsap'
-import ScrollToPlugin from '../../../../node_modules/gsap/ScrollToPlugin.js'
-gsap.registerPlugin(ScrollToPlugin)
+// import gsap from 'gsap'
+// import ScrollToPlugin from '../../../../node_modules/gsap/ScrollToPlugin.js'
+// gsap.registerPlugin(ScrollToPlugin)
 
 
 
@@ -11,8 +11,7 @@ export const Links = ({sections}) => {
 
     function handleClickEvent(e) {
         const id_ = e.target.getAttribute('id').replace(/[^a-zA-Z ]/g, '')
-        console.log(id_)
-        gsap.to(window, {duration: .3, scrollTo: {y: `#${id_}`, offsetY: 32 }, ease: "power2"});
+        // gsap.to(window, {duration: .3, scrollTo: {y: `#${id_}`, offsetY: 32 }, ease: "power2"});
     }
 
     return (

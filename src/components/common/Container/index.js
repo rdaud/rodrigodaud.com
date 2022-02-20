@@ -5,10 +5,4 @@ export const Container = styled.div`
 	margin: 0 auto;
 	width: 100%;
 	padding: 0 2rem;
-	// @media (min-width: 601px) {
-	// 	width: 90%;
-	// }
-	// @media (min-width: 1080px) {
-	// 	width: 80%;
-	// }
 `
