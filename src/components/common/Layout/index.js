@@ -17,7 +17,7 @@ export const Layout = ({ children, bg }) => {
       <Wrapper bg={bg}>
         {children}
       </Wrapper>
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider>
 
   )

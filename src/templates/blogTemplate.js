@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Layout, Spacer } from "../components/common"
+import { Layout } from "../components/common"
 import { Intro, Content, Links } from "../components/project"
 
 export default function Template({
