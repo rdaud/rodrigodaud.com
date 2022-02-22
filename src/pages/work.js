@@ -1,7 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { Layout, Spacer } from "../components/common"
-import { Mosaic, Title } from "../components/work"
+import { Mosaic } from "../components/work"
 
 
 

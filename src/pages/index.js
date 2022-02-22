@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Layout, Spacer } from 'components/common'
 import { Intro, GraphicDesign, Purpose, Featured, Prototypes } from "../components/landing"
-import gsap from 'gsap'
-
 
 
 const IndexPage = () => {
@@ -15,28 +13,6 @@ const IndexPage = () => {
     },2000)
   },[])
 
-
-
-// React.useEffect(() => {
-//   // const intro = document.querySelector('.intro')
-//   // const logo = document.querySelector('.logo')
-//   // const contact = document.querySelector('.contact')
-//   // const navigation = document.querySelector('.navigation')
-
-//   // // setTimeout(() => {
-//   // //   intro.classList.add('fade-out')
-  
-//   // // }, 2000)
-//   // console.log('teste')
-//   // setTimeout(() => {
-//   //   // intro.remove()
-//   //   logo.classList.add('reveal')
-//   //   contact.classList.add('reveal')
-//   //   navigation.classList.add('reveal')
-//   // }, 3000)
-
-  
-// },[])
 
   return (
     <>

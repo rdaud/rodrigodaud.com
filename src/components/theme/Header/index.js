@@ -14,27 +14,31 @@ const activeStyles = {
     'background': 'red'
 }
 
-window.addEventListener('scroll', e => {
-
-    const headerEl = document.querySelector('.header')
-    
-    let currentScrollPosition = window.scrollY
-
-    if (currentScrollPosition > prevScrollPosition + 10) {
-        headerEl.classList.add('hide')
-    }
-    if (currentScrollPosition < prevScrollPosition - 10) {
-        headerEl.classList.remove('hide')
-    }
-    prevScrollPosition = currentScrollPosition
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined"
 
 
 export const Header = () => {
 
     const [ active, isActive ] = useState(false)
 
+    if (isBrowser) {
+        window.addEventListener('scroll', e => {
 
-    })
+            const headerEl = document.querySelector('.header')
+            
+            let currentScrollPosition = window.scrollY
+        
+            if (currentScrollPosition > prevScrollPosition + 10) {
+                headerEl.classList.add('hide')
+            }
+            if (currentScrollPosition < prevScrollPosition - 10) {
+                headerEl.classList.remove('hide')
+            }
+            prevScrollPosition = currentScrollPosition
+        })    
+    }
+   
 
     return (
         <>
