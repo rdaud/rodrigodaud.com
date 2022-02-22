@@ -42,10 +42,9 @@ export const Header = () => {
 
     return (
         <>
-        { isActive && <Overlay /> }
+        { active && <Overlay /> }
         <Wrapper className="header">
             <Container>
-
             <Link to="/">
                 <Logo className="logo">
                     <Name>

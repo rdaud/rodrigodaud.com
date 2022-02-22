@@ -4,7 +4,6 @@ import { Header, Footer } from '../../theme'
 import { Wrapper } from './styles.js'
 
 import './fonts.css'
-import './layout.css'
 import 'normalize.css'
 import globalTheme from './globalTheme.js'
 
