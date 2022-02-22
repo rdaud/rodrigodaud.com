@@ -14,23 +14,25 @@ const activeStyles = {
     'background': 'red'
 }
 
+window.addEventListener('scroll', e => {
+
+    const headerEl = document.querySelector('.header')
+    
+    let currentScrollPosition = window.scrollY
+
+    if (currentScrollPosition > prevScrollPosition + 10) {
+        headerEl.classList.add('hide')
+    }
+    if (currentScrollPosition < prevScrollPosition - 10) {
+        headerEl.classList.remove('hide')
+    }
+    prevScrollPosition = currentScrollPosition
+
+
 export const Header = () => {
 
     const [ active, isActive ] = useState(false)
 
-    window.addEventListener('scroll', e => {
-
-        const headerEl = document.querySelector('.header')
-        
-        let currentScrollPosition = window.scrollY
-
-        if (currentScrollPosition > prevScrollPosition + 10) {
-            headerEl.classList.add('hide')
-        }
-        if (currentScrollPosition < prevScrollPosition - 10) {
-            headerEl.classList.remove('hide')
-        }
-        prevScrollPosition = currentScrollPosition
 
     })
 
