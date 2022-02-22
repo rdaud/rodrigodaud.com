@@ -66,8 +66,10 @@ body {
     font-style: italic;
   }
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0.67em 0;
+    letter-spacing: 0.0625rem;
+
   }
   mark {
     background-color: #ff0;
@@ -258,6 +260,8 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 1.671rem;
     line-height: 1.1;
+    letter-spacing: 0.0625rem;
+
   }
   h3 {
     margin-left: 0;
@@ -275,6 +279,8 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
     line-height: 1.1;
+    letter-spacing: 0.0625rem;
+
   }
   h4 {
     margin-left: 0;
@@ -291,6 +297,8 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 1rem;
     line-height: 1.1;
+    letter-spacing: 0.0625rem;
+
   }
   h5 {
     margin-left: 0;
@@ -308,6 +316,8 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
     line-height: 1.1;
+    letter-spacing: 0.0625rem;
+
   }
   h6 {
     margin-left: 0;
@@ -325,6 +335,8 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;
     line-height: 1.1;
+    letter-spacing: 0.0625rem;
+
   }
   hgroup {
     margin-left: 0;
@@ -395,7 +407,7 @@ body {
     font-family: 'DM Serif', serif;
     font-size: 1.1rem;
     font-weight: 300;
-    letter-spacing: .2px;
+    letter-spacing: 0.0625em;
   }
   figure {
     margin-left: 0;

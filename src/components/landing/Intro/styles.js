@@ -31,6 +31,9 @@ export const Title = styled.h1`
     line-height: 1;
     margin: 0 !important;
     color: #222222;
+    @media (max-width: 650px) {
+        font-size: 4rem;
+    }
 `
 
 export const Subtitle = styled.h2`
