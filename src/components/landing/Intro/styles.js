@@ -26,7 +26,6 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h1`
-    font-family: 'Questrial', sans-serif;
     font-size: 6rem;
     line-height: 1;
     margin: 0 !important;
@@ -37,6 +36,5 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-    font-family: 'Questrial', sans-serif;
     color: #222222;
 `
