@@ -2,23 +2,46 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
 `
 
 export const Post = styled.div`
     width: 100%;
-    border-bottom: 1px solid black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: min-content;
+    align-items: flex-start;
     cursor: pointer;
-    transition: border-bottom .3s;
+    padding-bottom: 1rem;
+    position: relative;
 
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        height: 8px;
+        width: 100%;
+        transform-origin: top left;
+        transform: scaleX(0);
+        background: ${ props => props.theme.colors.blue };
+        transition: all .5s ease-in-out;
+    }
     &:hover {
-        border-bottom: 5px solid black;
-        transition: border-bottom .3s;
+        color: blue !important;
+
+        p {
+            color: blue !important;
+        }
+
+        &::before {      
+            transform-origin: top left;
+            transform: scaleX(1);
+            background: ${ props => props.theme.colors.blue };
+        }
+        transition: all .5s ease-in-out;
+
     }
 `
 
@@ -31,12 +54,12 @@ export const Display = styled.p`
 `
 
 export const Tag = styled.small`
+text-transform: capitalize;
+
     &:not(:last-child):after  {
-        content: '';
-        width: 1px;
-        height: 10px;
+        content: '•';  
         margin: 0 .250rem;
-        background: #00000030;
+        background: transparent;
         position: relative;
         display: inline-block;
     }

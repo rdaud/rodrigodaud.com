@@ -10,6 +10,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+
        <Intro
             title={frontmatter.title}
             location={frontmatter.location}
@@ -17,14 +18,15 @@ export default function Template({
             client={frontmatter.client}
             timeline={frontmatter.timeline}
         />
+
         <Links
             sections={frontmatter.sections}
         />
-        <Content>
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Content>
+            <Content>
+                <div
+                    dangerouslySetInnerHTML={{ __html: html }}
+                />
+            </Content>
     </Layout>
   )
 }

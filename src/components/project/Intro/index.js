@@ -1,11 +1,10 @@
 import React from 'react'
 import { Wrapper, Title, Details } from './styles.js'
-import { SmallerContainer, Spacer, Container } from '../../common'
+import { SmallerContainer, Spacer } from '../../common'
 
 export const Intro = ({ title, client, location, industry, timeline }) => {
     return (
-        <Wrapper as={Container}>
-           <Spacer large />
+        <Wrapper as={SmallerContainer}>
            <Spacer large />
             <Title>{title}</Title>
             <Spacer small />
@@ -27,7 +26,6 @@ export const Intro = ({ title, client, location, industry, timeline }) => {
                         <p> { timeline }</p>
                     </li>              
             </Details>
-            <Spacer medium />
         </Wrapper>
     )
 }

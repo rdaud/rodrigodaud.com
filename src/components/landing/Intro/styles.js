@@ -1,37 +1,39 @@
 import styled, { keyframes } from "styled-components"
 
-const anim = keyframes`
-    from {
-        transform: translateY(0px);
-    }
+// const anim = keyframes`
+//     0% {
+//         transform: rotateX(0deg);
+//     }
 
-    to {
-        transform: translateY(-10px);
-    }
-`
+//     50% {
+//         transform: rotateX(0deg);
+//     }
+
+//     100% {
+//         transform: rotateX(360deg);
+
+//     }
+// `
 
 export const Wrapper = styled.div`
-    height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 `
 
 export const Title = styled.h1`
     font-family: 'Questrial', sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 1;
-    animation-duration: 1s;
-    animation-name: ${anim};
-    animation-direction: forwards;
-    animation-delay: .2s;
+    margin: 0 !important;
+    color: #222222;
 `
 
 export const Subtitle = styled.h2`
     font-family: 'Questrial', sans-serif;
-    animation-duration: 1s;
-    animation-name: ${anim};
-    animation-direction: forwards;
-    animation-delay: .4s;
+    color: #222222;
 `

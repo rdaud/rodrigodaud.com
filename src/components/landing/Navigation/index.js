@@ -36,10 +36,10 @@ export const Navigation = ({ className }) => {
     }
 
     return (
-        <Wrapper className={className}>
-            <Item className="work" onClick={handleClickEvent} key={1}>
-                Work
-            </Item>
+        <Wrapper className="navigation">
+                <Item className="work" onClick={handleClickEvent} key={1}>
+                    Work
+                </Item>
             <Item className="about" onClick={handleClickEvent} key={2}>
                 About
             </Item>

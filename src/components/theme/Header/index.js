@@ -1,14 +1,49 @@
-import React from 'react';
-import { Wrapper, Logo, Name, Slogan, Divider, Contact } from './styles.js'
+import React, { useState } from 'react';
+import { Wrapper, Logo, Name, Slogan, Divider, Item, NavItens } from './styles.js'
 import { Link } from 'gatsby';
+import { Menu } from './Menu';
+import { Overlay } from './Overlay'
+import { Container } from '../../common/index.js';
+import TransitionLink from 'gatsby-plugin-transition-link'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import './header.css'
+
+let prevScrollPosition = 0;
+
+const activeStyles = {
+    'background': 'red'
+}
 
 export const Header = () => {
+
+    const [ active, isActive ] = useState(false)
+
+    window.addEventListener('scroll', e => {
+
+        const headerEl = document.querySelector('.header')
+        
+        let currentScrollPosition = window.scrollY
+
+        if (currentScrollPosition > prevScrollPosition + 10) {
+            headerEl.classList.add('hide')
+        }
+        if (currentScrollPosition < prevScrollPosition - 10) {
+            headerEl.classList.remove('hide')
+        }
+        prevScrollPosition = currentScrollPosition
+
+    })
+
     return (
-        <Wrapper>
+        <>
+        { isActive && <Overlay /> }
+        <Wrapper className="header">
+            <Container>
+
             <Link to="/">
                 <Logo className="logo">
                     <Name>
-                    Rodrigo Daud
+                        Rodrigo Daud
                     </Name>
                     <Divider />
                     <Slogan>
@@ -16,9 +51,33 @@ export const Header = () => {
                     </Slogan>
                 </Logo>
             </Link>
-            <Contact className="contact">
-                Contact
-            </Contact>
+            <Menu />
+            <NavItens>
+                <AniLink
+                    cover
+                    bg="#000000"
+                    direction="up"
+                    duration={2}
+                    entryOffset={300}
+                    to="/work"
+                 >
+                    <Item className="work">
+                        Work
+                    </Item>
+                </AniLink>
+                <Link to="/contact" activeStyle={activeStyles}>
+                    <Item className="contact">
+                        Contact
+                    </Item>
+                </Link>
+                <Link to="/about" activeStyle={activeStyles}>
+                    <Item className="about">
+                        About
+                    </Item>
+                </Link>
+            </NavItens>
+            </Container>
         </Wrapper>
+        </>
     )
 }

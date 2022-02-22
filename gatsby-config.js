@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
+    "gatsby-plugin-transition-link",
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-transformer-remark`,
@@ -34,7 +35,7 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
-      "path": "./src/images/"
+      "path": "./src/images"
     },
     __key: "images"
   }, {

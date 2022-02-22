@@ -16,10 +16,15 @@ export const Title = styled.h1`
 
 export const Details = styled.ul`
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 
      small {
         color: ${props => props.theme.colors.lightgray} !important;
+    }
+
+    @media (max-width: 650px) {
+        flex-direction: column;
+        gap: 0;
     }
 
 `

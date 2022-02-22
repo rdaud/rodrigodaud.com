@@ -8,10 +8,9 @@ export const Wrapper = styled.div`
     align-content: stretch;
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    position: relative;
+  
+    opacity: 0;
 `
 
 export const Item = styled.h1`
@@ -27,5 +26,6 @@ export const Item = styled.h1`
     margin-bottom: 0;
     background: white;
     cursor: pointer;
+    margin: 0 !important;
 `
 

@@ -1,0 +1,14 @@
+.hide {
+    transform: translateY(-72px) !important;
+    transition: all 1s;
+}
+
+[aria-current='page']::after {
+    content: '';
+    height: 2px;
+    background: green !important;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+   
+}
