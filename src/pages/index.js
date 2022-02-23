@@ -23,9 +23,7 @@ const IndexPage = () => {
           <Intro />
         <Spacer large />
         <Spacer large />
-        <Spacer large />
           <Purpose />
-        <Spacer large />
         <Spacer large />
         <Spacer large />
           <Featured />

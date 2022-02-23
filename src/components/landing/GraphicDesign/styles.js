@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
     overflow: show;
 `
 
-export const Title = styled.h2`
+export const Title = styled.h3`
     color: ${ props => props.theme.colors.lightgray };
 `
 

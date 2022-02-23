@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: `rodrigo-daud-site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Rodrigo Daud • Design & Technology`,
+    siteUrl: `https://www.rodrigodaud.com`
   },
   plugins: [
     "gatsby-plugin-transition-link",

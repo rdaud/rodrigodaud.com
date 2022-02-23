@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Layout } from "../components/common"
+import { Layout, Spacer } from "../components/common"
 import { Intro, Content, Links } from "../components/project"
 
 export default function Template({
@@ -10,7 +10,6 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-
        <Intro
             title={frontmatter.title}
             location={frontmatter.location}
@@ -27,6 +26,9 @@ export default function Template({
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
             </Content>
+            <Spacer large />
+            <Spacer large />
+
     </Layout>
   )
 }

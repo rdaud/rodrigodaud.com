@@ -3,3 +3,45 @@
     src: url('./fonts/Questrial-Regular.ttf') format('truetype');
     font-weight: 400;
   }
+
+  @font-face {
+    font-family: 'CiscoSans';
+    src: url('./fonts/CiscoSans.otf') format('opentype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'MillerBanner';
+    src: url('./fonts/MillerBanner-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Martel';
+    src: url('./fonts/Martel-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Martel';
+    src: url('./fonts/Martel-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Martel';
+    src: url('./fonts/Martel-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+  }

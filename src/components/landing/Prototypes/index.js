@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Wrapper, InnerWrapper, Title, Description, Button, Display } from './styles.js'
+import { Wrapper, InnerWrapper, Title, CTA, Button, Display } from './styles.js'
 import { Container, Spacer } from '../../common/index.js'
 
 export const Prototypes = () => {
@@ -17,12 +17,10 @@ export const Prototypes = () => {
                             <Display>
                                 Cutting edge prototypes that take usability testings to next level.
                             </Display>
-                            <Description>
-                            With the help of tools and coding languages like Framer and React, I design and code fully dynamic prototypes that almost feel as final product. But with the agility that only a prototype can give.
-                            </Description>
-                            <Button>
+                           
+                            <CTA>
                                 Explore prototypes
-                            </Button>  
+                            </CTA>  
                         </div>
                         <div style={{
                             'alignSelf': 'center'

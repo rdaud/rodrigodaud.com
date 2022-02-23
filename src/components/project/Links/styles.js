@@ -13,7 +13,8 @@ export const InnerWrapper = styled.div`
 
     small {
         flex-basis: 100%;
-        color: ${ props => props.theme.colors.lightgray }
+        color: ${ props => props.theme.colors.lightgray };
+        margin-bottom: .5rem;
     }
 
     li {
@@ -30,14 +31,14 @@ export const InnerWrapper = styled.div`
 
 
 export const Item = styled.li`
-    font-size: 20px !important;
+    font-size: 1.1rem !important;
     text-transform: capitalize;
-    font-family: 'DM Serif', serif;
     cursor: pointer;
     transition: color .3s ease-out;
+    font-family: Martel, sans;
     color: ${ props => props.theme.colors.dark };
     &:hover {
-        color: ${ props => props.theme.colors.yellow } !important;
+        color: ${ props => props.theme.colors.blue } !important;
         transition: color .3s ease-out;
     }
 `

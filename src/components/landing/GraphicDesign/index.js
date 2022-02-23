@@ -44,23 +44,25 @@ export const GraphicDesign = () => {
     console.log(edges)
 
     return (
-        <Wrapper as={Container}>
-            <Title>
-                Graphic Design
-            </Title>
-            <Display>
-                Before becoming an Experience Designer, I worked for 8 years as Graphic Designer & Illustrator.
-            </Display>
-            <Images>
-                { edges.map((img, index) => {
-                      const image = getImage(img.node)
-                    return (
-                        <Slide up>
-                        <StyledImage index={index} key={img.node.id} image={image} /> 
-                        </Slide>
-                    )
-                }) }
-            </Images>
+        <Wrapper>
+            <Container>
+                <Title>
+                    Graphic Design
+                </Title>
+                <Display>
+                    Before becoming an Experience Designer, I worked for 8 years as Graphic Designer & Illustrator.
+                </Display>
+                <Images>
+                    { edges.map((img, index) => {
+                        const image = getImage(img.node)
+                        return (
+                            <Slide up>
+                            <StyledImage index={index} key={img.node.id} image={image} /> 
+                            </Slide>
+                        )
+                    }) }
+                </Images>
+            </Container>
         </Wrapper>
     )
 }

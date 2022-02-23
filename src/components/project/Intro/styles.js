@@ -18,8 +18,14 @@ export const Details = styled.ul`
     display: flex;
     gap: 3rem;
 
-     small {
+    small {
         color: ${props => props.theme.colors.lightgray} !important;
+       
+
+    }
+
+    p {
+        margin-top: .5rem;
     }
 
     @media (max-width: 650px) {

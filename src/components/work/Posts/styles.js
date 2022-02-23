@@ -21,11 +21,11 @@ export const Post = styled.div`
         content: '';
         position: absolute;
         bottom: -4px;
-        height: 8px;
+        height: 4px;
         width: 100%;
         transform-origin: top left;
-        transform: scaleX(0);
-        background: ${ props => props.theme.colors.blue };
+        transform: scaleX(1);
+        background: ${ props => props.theme.colors.dark };
         transition: all .5s ease-in-out;
     }
     &:hover {
@@ -46,8 +46,8 @@ export const Post = styled.div`
 `
 
 export const Display = styled.p`
-    font-size: 72px;
-    line-height: 1;
+    font-size: 4rem;
+    line-height: .9 !important;
     font-weight: bold;
     font-family: 'Questrial', sans-serif;
     padding: 2rem 0;

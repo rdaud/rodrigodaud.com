@@ -15,14 +15,13 @@ import styled, { keyframes } from "styled-components"
 //     }
 // `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 `
 
 export const Title = styled.h1`

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
     width: 100%;
     height: 72px;
-    background: white;
+    background: ${ props => props.theme.colors.white };
     position: fixed;
     top: 0;
     left: 0;
